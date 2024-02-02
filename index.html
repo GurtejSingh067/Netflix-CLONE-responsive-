@@ -4,129 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        .background-image{
-            height: 80vh;
-            width: 100%;
-            background-image: url(Images/backgroundPic.jpg);
-            background-position-x: -172px;
-            background-position-y: -178px;
-            background-size: 1608px;
-            position: absolute;
-        }
-        .black-shaded-box{
-            width: 100%;
-            height: 80vh;
-            background-color: black;
-            opacity: 0.5;
-            position: absolute;
-        }
-        
-        nav{
-            position: relative;
-            display: flex;
-            justify-content : space-around;
-            align-items: center;
-            /* border: 2px solid yellow; */
-        }
-        nav> .Netflix-Logo{
-            padding: 23px;
-            margin-right: 38vh;
-        }
-        .navButtons{
-            display: flex;
-            align-items: center;
-            gap: 23px;
-            background-color: transparent;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-right: 39px;
-        }
-        .button1{
-            display: flex;
-            align-items: center;
-            color: white;
-            border: 0.2px solid #9E9E9E;
-            border-radius: 10px;
-            background-color: black;
-            padding: 9px;
-            width: 105px;
-            font-size: 16px;
-        }
-        .button2{
-            background-color: red;
-            padding: 8px;
-            border-radius: 6px;
-            width: 61px;
-            font-size: 15px;
-            font-weight: 600;
-        }
-        .english{
-            padding-left: 11px;
-            padding-right: 8px;
-            font-size: 15px;
-        }
-        .section1-content{
-            height: 53px;
-            position: relative;
-            z-index: 2;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 30vh;
-        }
-        .line1{
-            width: 74vw;
-            font-size: 45px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 800;
-        }
-        .line2{
-            padding: 23px;
-            font-size: 24px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .line3{
-            padding: 10px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-        .content-buttons{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 6px;
-            padding: 8px;
-        }
-        .inputGmail{
-            padding: 16px;
-            width: 345px;
-            background-color: transparent;
-            border-radius: 4px;
-            border: 0.2px solid #898686;
-            color: white;
-            font-size: 17px;
-        }
-        .getStarted{
-            padding: 15px;
-            background-color: red;
-            border-radius: 8px;
-            width: 209px;
-            font-size: 25px;
-            color: white;
-            font-weight: 700;
-        }
-        .inputGmail::placeholder{
-            color: rgb(175, 173, 173);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
@@ -153,6 +31,60 @@
                 <button class="getStarted">Get Started <span><img width=23 src="Images/rightwhitearrow2.jfif" alt="RightArrow"></span></button>
             </div>
         </main>
+    </section>
+
+    <section class="Page2">
+        <div class="Page2-content">
+            <div class="Page2-writtenContent1">
+                <div class="Page2-line1">Enjoy on your TV</div>
+                <div class="Page2-line2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</div>
+            </div>
+            <div class="Page2-imageVideo">
+                <img class=Page2-tvFrame width=467 src="Assests/tv.png" alt="Page1-Video">
+                <video class="Page2-video" src="Videos/animationVideo.m4v" autoplay loop muted></video>
+            </div>
+        </div>
+    </section>
+
+    <section class="Page3">
+        <div class="Page3-images">
+            <img width=233 class="Page3-mobileImage" src="Images/mobile.jpg" alt="Page3-Mobile-Image">
+            <div class="bottomBox">
+                <img class="Page3-bottomImage" width=70 src="Images/boxshotbottommobile.png" alt="Mobile_bottom_pic">
+                <div class="contentBoxBetweenImages">
+                    <div class="StrangerThings">Stranger things</div>
+                    <div class="Page3-downloading">Downloading...</div>
+                </div>
+                <img class="Page3-downloadAnimation" width=38 height=39 src="Images/downloadAnimation.gif" alt="downloadAnimation">
+            </div>
+        </div>
+        <div class="Page3-writtenContent">
+            <div class="Page3-line1">Download your shows to watch offline</div>
+            <div class="Page3-line2">Save your favourites easily and always have something to watch.</div>
+        </div>
+    </section>
+
+    <section class="Page4">
+        <div class="Page4-content">
+            <div class="Page4-writtenContent1">
+                <div class="Page4-line1">Watch everywhere</div>
+                <div class="Page4-line2">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</div>
+            </div>
+            <div class="Page4-imageVideo">
+                <img class=Page4-tvFrame width=467 src="Assests/rajmachawal.png" alt="Page4-Video">
+                <video class="Page4-video" src="Videos/rajmachawalvideo.m4v" autoplay loop muted></video>
+            </div>
+        </div>
+    </section>
+
+    <section class="Page5">
+        <div>
+            <img class="Page5-image" width=70 src="Images/childrenPoster.png" alt="Mobile_bottom_pic">
+        </div>
+        <div class="Page5-writtenContent">
+            <div class="Page5-line1">Create profiles for kids</div>
+            <div class="Page5-line2">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</div>
+        </div>
     </section>
 </body>
 </html>
