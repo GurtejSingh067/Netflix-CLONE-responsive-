@@ -1,3 +1,4 @@
+/*Page1 editing section*/
 *{
     padding: 0;
     margin: 0;
@@ -27,7 +28,6 @@ nav{
     display: flex;
     justify-content : space-around;
     align-items: center;
-    /* border: 2px solid yellow; */
 }
 nav> .Netflix-Logo{
     padding: 23px;
@@ -60,6 +60,10 @@ nav> .Netflix-Logo{
     width: 61px;
     font-size: 15px;
     font-weight: 600;
+    cursor: pointer;
+}
+.button2:hover{
+    background-color:rgb(199, 10, 10);
 }
 .english{
     padding-left: 11px;
@@ -118,6 +122,10 @@ nav> .Netflix-Logo{
     font-size: 25px;
     color: white;
     font-weight: 700;
+    cursor: pointer;
+}
+.getStarted:hover{
+    background-color:rgb(199, 10, 10);
 }
 .inputGmail::placeholder{
     color: rgb(175, 173, 173);
@@ -132,7 +140,6 @@ nav> .Netflix-Logo{
     width: 100%;
     height: 50vh;
     background-color: black;
-    overflow-x: hidden;
 }
 .Page2-line1{
     margin-bottom: 23px;
@@ -155,23 +162,18 @@ nav> .Netflix-Logo{
 .Page2-writtenContent1{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    margin-right: 390px;
 }
 .Page2-imageVideo{
     display: flex;
-    margin-left: 833px;
 }
 .Page2-tvFrame{
-    position: relative;
     z-index: 1;
 }
 .Page2-video{
-    position: relative;
-    right: 405px;
-    bottom: 6px;
-    width: 339px;
-    z-index: 0;
+    position: absolute;
+    scale: 0.71;
+    top: 815px;
+    right: 170px;
 }
 
 /*Page3 section editing*/
@@ -187,7 +189,6 @@ nav> .Netflix-Logo{
 .Page3-images{
     display: flex;
     flex-direction: column;
-    /* width: 233px; */
     justify-content: center;
     align-items: center;
 }
@@ -252,10 +253,8 @@ nav> .Netflix-Logo{
     width: 100%;
     height: 50vh;
     background-color: black;
-    overflow-x: hidden;
 }
 .Page4-line1{
-    margin-bottom: 23px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: 900;
@@ -275,24 +274,20 @@ nav> .Netflix-Logo{
 .Page4-writtenContent1{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    margin-right: 471px;
 }
 .Page4-imageVideo{
     display: flex;
-    margin-left: 833px;
 }
 .Page4-tvFrame{
     position: relative;
     z-index: 1;
 }
 .Page4-video{
-    /* border: 2px solid yellow; */
-    position: relative;
-    right: 390px;
-    bottom: 56px;
-    width: 300px;
-    z-index: 0;
+    border: 2px solid yellow;
+    position: absolute;
+    scale: 0.63;
+    top: 187vh;
+    right: 165px;
 }
 
 /* Page5 section starting */
@@ -311,7 +306,7 @@ nav> .Netflix-Logo{
     color: white;
     font-weight: 900;
     font-size: 45px;
-    width: 398px;
+    width: 449px;
 }
 .Page5-line2{
     font-family: Arial, Helvetica, sans-serif;
@@ -322,4 +317,108 @@ nav> .Netflix-Logo{
 .Page5-image{
     width: 492px;
     height: auto;
+}
+
+/*Page6 section starting*/
+.Page6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    margin-top: 12px;
+    background-color: black;
+}
+.heading{
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Questions{
+    margin: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    
+}
+
+.question{
+    width: 68vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(79, 76, 76);
+    margin: 13px;
+    padding: 23px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.question:hover{
+    background-color: rgb(103, 97, 97);
+}
+
+.membershipLine{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:8px;
+    
+}
+
+/*Page7 editing section*/
+.Page7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    margin-top: 12px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.firstLine{
+    font-size: 16px;
+    margin: 32px;
+    position: relative;
+    right: 360px;
+    color: rgb(164, 164, 164);
+}
+.contactNumber{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.grid{
+    color: rgb(164, 164, 164);
+    display: grid;
+    grid-template-columns: 231px 231px 231px 231px;
+    grid-template-rows: 32px 32px 32px 32px;
+    gap: 15px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+.button{
+    position: relative;
+    right: 422px;
+    color: rgb(216, 214, 214);
+    border: 0.2px solid #c1c1c1;
+    border-radius: 10px;
+    background-color: black;
+    padding: 9px;
+    width: 105px;
+    font-size: 16px;
+    margin: 10px;
+}
+.lastLine{
+    position: relative;
+    right: 451px;
+    margin: 9px;
+    font-size: 13px;
+    color: rgb(164, 164, 164);
+}
+.options{
+    cursor: pointer;
 }
