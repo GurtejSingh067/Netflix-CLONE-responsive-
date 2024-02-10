@@ -1,424 +1,1124 @@
-/*Page1 editing section*/
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
-body{
-    background-color: rgb(53, 52, 52);
+
+body {
+    background-color: rgb(61, 60, 60);
 }
-.background-image{
+
+.Page1 {
+    margin-bottom: 8px;
+    position: relative;
     height: 80vh;
-    width: 100%;
-    background-image: url(Images/backgroundPic.jpg);
-    background-position-x: -172px;
-    background-position-y: -178px;
-    background-size: 1608px;
-    position: absolute;
+    /* display: flex;
+    flex-direction: column; */
+    background-image: url("Images/backgroundPic.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 7px solid yellow; */
 }
-.black-shaded-box{
-    width: 100%;
+
+.blackShaded-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 80vh;
-    background-color: black;
-    opacity: 0.5;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.89);
+    opacity: 0.4;
 }
 
-nav{
+.netflixLogo {
+    /* border: 2px solid aqua; */
     position: relative;
-    display: flex;
-    justify-content : space-around;
-    align-items: center;
-}
-nav> .Netflix-Logo{
-    padding: 23px;
-    margin-right: 38vh;
-}
-.navButtons{
-    display: flex;
-    align-items: center;
-    gap: 23px;
-    background-color: transparent;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 39px;
-}
-.button1{
-    display: flex;
-    align-items: center;
-    color: white;
-    border: 0.2px solid #9E9E9E;
-    border-radius: 10px;
-    background-color: black;
-    padding: 9px;
-    width: 105px;
-    font-size: 16px;
-}
-.button2{
-    background-color: red;
-    padding: 8px;
-    border-radius: 6px;
-    width: 61px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.button2:hover{
-    background-color:rgb(199, 10, 10);
-}
-.english{
-    padding-left: 11px;
-    padding-right: 8px;
-    font-size: 15px;
-}
-.section1-content{
-    height: 53px;
-    position: relative;
-    z-index: 2;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30vh;
-}
-.line1{
-    width: 74vw;
-    font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-}
-.line2{
-    padding: 23px;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.line3{
-    padding: 10px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-.content-buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    padding: 8px;
-}
-.inputGmail{
-    padding: 16px;
-    width: 345px;
-    background-color: transparent;
-    border-radius: 4px;
-    border: 0.2px solid #898686;
-    color: white;
-    font-size: 17px;
-}
-.getStarted{
-    padding: 15px;
-    background-color: red;
-    border-radius: 8px;
-    width: 209px;
-    font-size: 25px;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
-}
-.getStarted:hover{
-    background-color:rgb(199, 10, 10);
-}
-.inputGmail::placeholder{
-    color: rgb(175, 173, 173);
+    z-index: 10;
+    /* margin: 23px; */
 }
 
-/*Page2's editing section*/
-.Page2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 53px;
-    width: 100%;
-    height: 50vh;
-    background-color: black;
-}
-.Page2-line1{
-    margin-bottom: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: 900;
-    font-size: 45px;
-}
-.Page2-line2{
-    width: 50vh;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 23px;
-}
-.Page2-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Page2-writtenContent1{
-    display: flex;
-    flex-direction: column;
-}
-.Page2-imageVideo{
-    display: flex;
-}
-.Page2-tvFrame{
-    z-index: 1;
-}
-.Page2-video{
-    position: absolute;
-    scale: 0.71;
-    top: 815px;
-    right: 170px;
-}
-
-/*Page3 section editing*/
-.Page3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12px;
-    width: 100%;
-    height: 50vh;
-    background-color: black;
-}
-.Page3-images{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.Page3-mobileImage{
-    width: 492px;
-    height: auto;
-    position: relative;
-    top: 57px;
-}
-.Page3-bottomImage{
-    position: relative;
-    left: 23px;
-}
-.bottomBox{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    position: relative;
-    bottom: 77px;
-    background-color: black;
-    border-radius: 14px;
-    border: 0.2px solid rgb(130, 126, 126);
-}
-.contentBoxBetweenImages{
-    color: white;
-    margin: 6px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.Page3-line1{
-    margin-bottom: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: 900;
-    font-size: 45px;
-    width: 398px;
-}
-.Page3-line2{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 23px;
-    width: 462px;
-}
-.Page3-downloadAnimation{
-    position: relative;
-    right: 23px;
-}
-.Page3-downloading{
-    color: blue;
-    font-size: 15px;
-}
-.StrangerThings{
-    font-weight: 600;
-}
-
-/*Page4 section starting*/
-.Page4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12px;
-    width: 100%;
-    height: 50vh;
-    background-color: black;
-}
-.Page4-line1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: 900;
-    font-size: 45px;
-}
-.Page4-line2{
-    width: 50vh;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 23px;
-}
-.Page4-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Page4-writtenContent1{
-    display: flex;
-    flex-direction: column;
-}
-.Page4-imageVideo{
-    display: flex;
-}
-.Page4-tvFrame{
-    position: relative;
-    z-index: 1;
-}
-.Page4-video{
-    border: 2px solid yellow;
-    position: absolute;
-    scale: 0.63;
-    top: 187vh;
-    right: 165px;
-}
-
-/* Page5 section starting */
-.Page5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12px;
-    width: 100%;
-    height: 50vh;
-    background-color: black;
-}
-.Page5-line1{
-    margin-bottom: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: 900;
-    font-size: 45px;
-    width: 449px;
-}
-.Page5-line2{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 23px;
-    width: 462px;
-}
-.Page5-image{
-    width: 492px;
-    height: auto;
-}
-
-/*Page6 section starting*/
-.Page6{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120vh;
-    margin-top: 12px;
-    background-color: black;
-}
-.heading{
-    color: white;
-    font-size: 45px;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.Questions{
-    margin: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    color: white;
-    
-}
-
-.question{
-    width: 68vw;
+nav {
+    padding: 12px 0;
+    max-width: 95vw;
+    margin: auto;
+    /* border: 2px solid yellow; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(79, 76, 76);
-    margin: 13px;
-    padding: 23px;
-    cursor: pointer;
-    border-radius: 2px;
-}
-.question:hover{
-    background-color: rgb(103, 97, 97);
+    position: relative;
+    z-index: 10;
+
 }
 
-.membershipLine{
+.button {
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+    width: 135px;
+    font-size: 17px;
     color: white;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom:8px;
-    
+    gap: 23px;
 }
 
-/*Page7 editing section*/
+.button1 {
+    padding: 8px;
+    width: 126px;
+    border-radius: 7px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 2px solid rgba(225, 221, 221, 0.447);
+}
+
+.button2 {
+    padding: 8px;
+    background-color: red;
+    width: 86px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.writtenContent {
+    /* border: 2px solid aqua; */
+    height: 90%;
+    color: white;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.line1 {
+    font-weight: 900;
+    padding: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.line2 {
+    padding: 15px;
+    font-size: 24px;
+}
+
+.line3 {
+    padding: 15px;
+    font-size: 19px;
+}
+
+.emailGetStarted {
+    /* border: 2px solid yellow; */
+    display: flex;
+    z-index: 10;
+    gap: 10px;
+}
+
+#emailInputButton {
+    color: white;
+    padding: 17px;
+    width: 315px;
+    background-color: rgba(23, 23, 23, 0.7);
+    font-size: 17px;
+    border: 0.2px solid rgb(124, 122, 122);
+    border-radius: 4px;
+}
+
+#emailInputButton::placeholder {
+    color: rgb(172, 166, 166);
+}
+
+.getStartedButton {
+    width: 202px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 23px;
+}
+
+.Page2 {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Page2-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    width: 592px;
+    height: 65vh;
+    margin: 27px;
+}
+
+.Page2-lines> :first-child {
+    /* border: 2px solid yellow; */
+    font-size: 47px;
+    color: white;
+    font-weight: 900;
+}
+
+.Page2-lines :nth-child(2) {
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    /* width: 50vw; */
+    margin-top: 20px;
+    ;
+}
+
+.Page2-videoFrame {
+    position: relative;
+    /* border: 2px solid yellow; */
+    /* width: 45.83vw; */
+}
+
+.Page2-videoFrame> :first-child {
+    position: relative;
+    z-index: 1;
+    width: 550px;
+}
+
+.Page2-videoFrame> :nth-child(2) {
+    width: 400px;
+    position: absolute;
+    top: 21%;
+    left: 13%;
+    right: 0;
+    bottom: 0;
+}
+
+.Page3 {
+    margin-bottom: 8px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Page3-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid aqua; */
+    width: 592px;
+    height: 65vh;
+    margin: 27px;
+    color: white;
+}
+
+.Page3-lines> :first-child {
+    font-size: 47px;
+    color: white;
+    font-weight: 900;
+}
+
+.Page3-lines :nth-child(2) {
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    width: 39vw;
+    margin-top: 20px;
+    ;
+}
+
+.Page3-mobileImage {
+    /* width: 40.1vw; */
+    display: flex;
+    position: relative;
+}
+.Page3-mobileImage> :first-child{
+    width: 42vw;
+}
+
+.bottomBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(139, 130, 130);
+    position: absolute;
+    width: 22vw;
+    height: 15vh;
+    left: 23.23%;
+    bottom: 7%;
+    border-radius: 17px;
+    background-color: black;
+}
+.bottomBox> :first-child{
+    
+    height: 12vh;
+    /* border: 2px solid yellow; */
+}
+
+.bottomBox> :first-child{
+    height: 12vh;
+    /* border: 2px solid yellow; */
+
+}
+.contentBottomBox{
+    display: flex;
+    flex-direction: column;
+    color: blue;
+}
+
+.contentBottomBox> :nth-child(1){
+    color: white;
+}
+.contentBottomBox> :nth-child(2){
+    font-size: 14px;
+}
+
+.bottomBox> :nth-child(3){
+    height: 56px;
+
+}
+.Page4 {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Page4-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    width: 592px;
+    height: 65vh;
+    margin: 27px;
+}
+
+.Page4-lines> :first-child {
+    /* border: 2px solid yellow; */
+    font-size: 47px;
+    color: white;
+    font-weight: 900;
+}
+
+.Page4-lines :nth-child(2) {
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    /* width: 50vw; */
+    margin-top: 20px;
+    ;
+}
+
+.Page4-videoFrame {
+    position: relative;
+    /* border: 2px solid yellow; */
+    /* width: 45.83vw; */
+}
+
+.Page4-videoFrame> :first-child {
+    position: relative;
+    z-index: 1;
+    width: 550px;
+}
+
+.Page4-videoFrame> :nth-child(2) {
+    width: 359px;
+    position: absolute;
+    top: 4%;
+    left: 17%;
+    right: 0;
+    bottom: 0;
+}
+.Page5{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif
+}
+.Page5-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    width: 592px;
+    height: 65vh;
+    margin: 27px;
+}
+
+.Page5-lines> :first-child {
+    /* border: 2px solid yellow; */
+    font-size: 47px;
+    color: white;
+    font-weight: 900;
+}
+
+.Page5-lines :nth-child(2) {
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    /* width: 50vw; */
+    margin-top: 20px;
+    ;
+}
+.Page6{
+    margin-bottom: 8px;
+    background-color: black;
+    color: white;
+    padding: 81px;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 51px;
+    text-align: center;
+}
+.questions{
+    margin: 5px;
+    padding: 23px;
+    background-color: rgba(66, 64, 64, 0.664);
+    width:75vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.plusSign> :first-child{
+    width: 23px;
+}
+.readyToWatch{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;;
+    margin: 23px 0;
+}
 .Page7{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    padding: 44px;
+}
+.Questions{
     color: white;
-    width: 100%;
-    height: 50vh;
-    margin-top: 12px;
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 59vw;
+    padding: 23px 10px;
+    color: rgb(150, 148, 148);
+    font-size: 21px;
 }
-.firstLine{
-    font-size: 16px;
-    margin: 32px;
-    position: relative;
-    right: 360px;
-    color: rgb(164, 164, 164);
-}
-.contactNumber{
+.number{
     text-decoration: underline;
-    cursor: pointer;
 }
-.grid{
-    color: rgb(164, 164, 164);
+.helpingLinks{
+    color: rgb(168, 164, 164);;
     display: grid;
-    grid-template-columns: 231px 231px 231px 231px;
-    grid-template-rows: 32px 32px 32px 32px;
-    gap: 15px;
-    font-size: 13px;
+    grid-template-columns: 256px 256px 256px 256px;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
 }
-.button{
-    position: relative;
-    right: 422px;
-    color: rgb(216, 214, 214);
-    border: 0.2px solid #c1c1c1;
-    border-radius: 10px;
-    background-color: black;
-    padding: 9px;
-    width: 105px;
-    font-size: 16px;
-    margin: 10px;
+.links{
+    color: rgb(150, 148, 148);
+    padding: 11px;
 }
-.lastLine{
-    position: relative;
-    right: 451px;
-    margin: 9px;
-    font-size: 13px;
-    color: rgb(164, 164, 164);
+.Page7-languageButton{
+    margin: 0 10px;
+    margin-right: 69vw;
 }
-.options{
-    cursor: pointer;
+.netflixIndia{
+    padding: 14px;
+    margin-right: 71vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(150, 148, 148);
+}
+@media only screen and (max-width: 1280px){
+    .Page3-mobileImage {
+        /* width: 40.1vw; */
+        display: flex;
+        position: relative;
+    }
+    .Page3-mobileImage> :first-child{
+        width: 50vw;
+    }
+    
+    .bottomBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        width: 27vw;
+        height: 15vh;
+        left: 23.23%;
+        bottom: 7%;
+        border-radius: 17px;
+        background-color: black;
+    }
+    .bottomBox> :first-child{
+        
+        height: 12vh;
+        /* border: 2px solid yellow; */
+    }
+    
+    .bottomBox> :first-child{
+        height: 12vh;
+        /* border: 2px solid yellow; */
+    
+    }
+    .contentBottomBox{
+        display: flex;
+        flex-direction: column;
+        color: blue;
+    }
+    
+    .contentBottomBox> :nth-child(1){
+        color: white;
+    }
+    .contentBottomBox> :nth-child(2){
+        font-size: 14px;
+    }
+    
+    .bottomBox> :nth-child(3){
+        height: 56px;
+    
+    }
+}
+
+@media only screen and (max-width: 1034px){
+    .Page7-contentBox{
+        width: 88vw;
+    }
+    .Questions{
+        font-size: 17px;
+    }
+    .helpingLinks{
+        grid-template-columns: 200px 200px 200px 200px;
+    }
+    .links{
+       font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .Page1 {
+        /* display: flex;
+        flex-direction: column; */
+        position: relative;
+        background-image: url("Images/backgroundPic.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        /* border: 2px solid yellow; */
+    }
+
+    nav {
+        /* border: 2px solid yellow; */
+
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .blackShaded-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        left: 0;
+        /* height: calc(100%-); */
+        background-color: black;
+        opacity: 0.4;
+    }
+
+    .writtenContent {
+        color: white;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        /* border: 2px solid aqua; */
+    }
+
+    .line1 {
+        font-weight: 900;
+        padding: 10px;
+        font-size: 30px;
+        ;
+        text-align: center;
+    }
+
+    .line2 {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .line3 {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .emailGetStarted {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        gap: 10px;
+    }
+
+
+    .Page2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 80vh;
+        padding: 39px;
+        ;
+    }
+
+    .Page2-lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid yellow; */
+        width: 80vw;
+        margin: 27px;
+    }
+
+    .Page2-lines> :first-child {
+        /* border: 2px solid yellow; */
+        font-size: 31px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .Page2-lines :nth-child(2) {
+        /* border: 2px solid aqua; */
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        max-width: 90vw;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .Page2-videoFrame {
+        /* border: 2px solid yellow; */
+        position: relative;
+        /* border: 2px solid yellow; */
+        /* width: 100vw */
+    }
+
+    .Page2-videoFrame> :first-child {
+        position: relative;
+        z-index: 1;
+        width: 550px;
+    }
+
+    .Page2-videoFrame> :nth-child(2) {
+        width: 400px;
+        position: absolute;
+        top: 21%;
+        left: 13%;
+        right: 0;
+        bottom: 0;
+    }
+
+    .Page3 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .Page3-mobileImage {
+        /* width: 40.1vw; */
+        display: flex;
+        position: relative;
+        /* border: 2px solid yellow; */
+    }
+    .Page3-mobileImage> :first-child{
+        width: 66vw;
+    }
+    .Page3-lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid aqua; */
+        width: 80vw;
+        height: 14vh;
+        margin: 27px;
+        color: white;
+    }
+    .Page3-lines> :first-child {
+        font-size: 31px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .Page3-lines :nth-child(2) {
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        width: 57vw;
+        margin-top: 20px;
+        text-align: center;
+        height: 20vh;
+    }
+    
+    .bottomBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        width: 35vw;
+        height: 95px;
+        left: 23.1%;
+        bottom: 7%;
+        border-radius: 17px;
+        background-color: black;
+    }
+    .bottomBox> :first-child{
+        
+        height: 69px;
+        /* border: 2px solid yellow; */
+    }
+    
+    .contentBottomBox{
+        display: flex;
+        flex-direction: column;
+        color: blue;
+    }
+    
+    .contentBottomBox> :nth-child(1){
+        font-size: 20px;
+        color: white;
+    }
+    .contentBottomBox> :nth-child(2){
+        font-size: 16px;
+    }
+    
+    .bottomBox> :nth-child(3){
+        height: 60px;
+    
+    }
+    .Page4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .Page4-lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid yellow; */
+        width: 80vw;
+        height: 28vh;
+        margin: 27px;
+    }
+    
+    .Page4-lines> :first-child {
+        /* border: 2px solid yellow; */
+        font-size: 31px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .Page4-lines :nth-child(2) {
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        max-width: 90vw;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+    
+    .Page4-videoFrame {
+        position: relative;
+        /* border: 2px solid yellow; */
+        /* width: 45.83vw; */
+    }
+    
+    .Page4-videoFrame> :first-child {
+        position: relative;
+        z-index: 1;
+        width: 550px;
+    }
+    
+    .Page4-videoFrame> :nth-child(2) {
+        width: 340px;
+        position: absolute;
+        top: 8%;
+        left: 18%;
+        right: 0;
+        bottom: 0;
+    }
+    .Page5{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .Page5-lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid yellow; */
+        width: 80vw;
+        height: 28vh;
+        margin: 27px;
+    }
+    
+    .Page5-lines> :first-child {
+        /* border: 2px solid yellow; */
+        font-size: 31px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .Page5-lines :nth-child(2) {
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        max-width: 90vw;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .Page5-Image> :first-child{
+        width: 66vw;
+        /* border: 2px solid yellow; */
+    }
+    .heading{
+        font-size: 32px;
+    }
+    .questions{
+        font-size: 20px;
+    }
+    .readyToWatch{
+        text-align: center;
+        font-size: 17px;
+    }
+    .Page7-contentBox{
+        width: 90vw;
+    }
+    .Questions{
+        widtH: 50vw;
+    }
+    .helpingLinks{
+        grid-template-columns: 315px 315px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .bottomBox {
+        height: 10vh;
+    }
+    .bottomBox> :first-child{
+        height: 7vh;
+        /* border: 2px solid yellow; */
+    }
+    .contentBottomBox> :nth-child(1){
+        font-size: 15px;
+        color: white;
+    }
+    .contentBottomBox> :nth-child(2){
+        font-size: 13px;
+    }
+    
+    .bottomBox> :nth-child(3){
+        height: 6vh;
+    
+    }
+    .helpingLinks{
+        grid-template-columns: 250px 250px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Page2-lines {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .Page2-videoFrame {
+        /* border: 2px solid yellow; */
+    }
+
+    .Page2-videoFrame> :first-child {
+        position: relative;
+        z-index: 1;
+        width: 89vw;
+    }
+
+    .Page2-videoFrame> :nth-child(2) {
+        width: 65vw;
+        position: absolute;
+        top: 21%;
+        left: 13%;
+        right: 0;
+        bottom: 0;
+    }
+    .bottomBox{
+        left: 18%;
+        width: 231px;
+        height: 78px;
+        margin: auto;
+    }
+    .contentBottomBox> :nth-child(1){
+        font-size: 14px;
+        color: white;
+    }
+    .contentBottomBox> :nth-child(2){
+        font-size: 12px;
+    }
+    
+    .bottomBox> :nth-child(3){
+        height: 43px;
+    
+    }
+    .Page4-lines {
+        max-width: 300px;
+        margin: auto;
+    }
+    
+    .Page4-lines> :first-child {
+        /* border: 2px solid yellow; */
+        font-size: 31px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .Page4-lines :nth-child(2) {
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        max-width: 90vw;
+        margin-top: 20px;
+        text-align: center;
+        ;
+    }
+    
+    .Page4-videoFrame {
+        position: relative;
+        /* border: 2px solid yellow; */
+        /* width: 45.83vw; */
+    }
+    
+    .Page4-videoFrame> :first-child {
+        position: relative;
+        z-index: 1;
+        width: 89vw;
+    }
+    
+    .Page4-videoFrame> :nth-child(2) {
+        width: 65vw;
+        position: absolute;
+        top: 21%;
+        left: 13%;
+        right: 0;
+        bottom: 0;
+    }
+    .helpingLinks{
+        grid-template-columns: 150px 150px;
+    }
+    .Page4-videoFrame> :nth-child(2) {
+        width: 57vw;
+        position: absolute;
+        top: 8%;
+        left: 18%;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    .Page1 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 60vh;
+        background-image: url("Images/backgroundPic.jpg");
+        background-position: center center;
+        background-size: max(1640px, 100vw);
+        background-repeat: no-repeat;
+    }
+
+    nav {
+        /* border: 2px solid yellow; */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blackShaded-box {
+        height: 60vh;
+    }
+
+    .button1 {
+        font-size: 15px;
+        padding: 8px;
+        width: 110px;
+        border-radius: 7px;
+        background-color: transparent;
+        border: 2px solid rgb(225, 221, 221);
+    }
+
+    .button2 {
+        padding: 8px;
+        background-color: red;
+        width: 86px;
+        border-radius: 7px;
+        font-size: 14px;
+    }
+
+    .writtenContent {
+        height: 100%;
+        color: white;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        /* border: 2px solid aqua; */
+    }
+
+    .line1 {
+        font-weight: 900;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .line2 {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .line3 {
+        padding: 15px;
+        font-size: 9px;
+    }
+
+    #emailInputButton {
+        color: white;
+        padding: 14px;
+        width: 80vw;
+        background-color: transparent;
+        font-size: 17px;
+        border: 0.2px solid rgb(124, 122, 122);
+        border-radius: 4px;
+    }
+
+    .getStartedButton {
+        font-size: 23px;
+        width: auto;
+    }
+
+
+    /* .Page2-lines{
+        max-width: 300px;
+        margin: auto;
+    }
+    .Page2-videoFrame{
+        border: 2px solid yellow;
+    }
+    .Page2-videoFrame> :first-child{
+        position: relative;
+        z-index: 1;
+        width: 40vw;
+    }
+    .Page2-videoFrame> :nth-child(2){
+        width: 29vw;
+        position: absolute;
+        top: 21%;
+        left: 13%;
+        right: 0;
+        bottom: 0;
+    } */
+    .Page3-mobileImage> :first-child{
+        width: 66vw;
+    }
+    .bottomBox{
+        left: 14%;
+        width: 231px;
+        height: 78px;
+        margin: auto;
+    }
+    @media only screen and (max-width: 385px){
+        .bottomBox{
+            left: -6%;
+        }
+    }
+    @media only screen and (max-width: 273px){
+        .bottomBox{
+            left: -17%;
+            
+        }
+    }
+    @media only screen and (max-width: 254px){
+        .bottomBox{
+            left: -22%;
+            
+        }
+    }
+    .heading{
+        font-size: 19px;
+    }
+    .questions{
+        font-size: 15px;
+    }
+    .readyToWatch{
+        font-size: 14px;
+    }
+    .Questions{
+        margin-right: auto;
+    }
+    .helpingLinks{
+        grid-template-columns: 100px 100px;
+    }
+    .Page7-languageButton{
+        margin-right: auto;
+    }
+    .netflixIndia{
+        margin-right: auto;
+    }
 }

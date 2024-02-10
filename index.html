@@ -3,133 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
+    <title>Netflix CLONE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="Page1">
-        <div class="background-image"></div>
-        <div class="black-shaded-box"></div>
         <nav>
-            <img class="Netflix-Logo" width=150 src="Assests/netflixlogo2.svg" alt="Netflix-Logo">
-            <button class="navButtons">
-                <div class="button1">
-                    <img width="17" src="Assests/languageicon.png" alt="">
-                    <span class="english">English</span>
-                    <img width=10 src="Assests/droparrow.jpg" alt="">
-                </div>
-                <div class="button2">Sign in</div>
-            </button>   
+            <div class="netflixLogo">
+                <img width="150px" src="Assests/netflixlogo2.svg" alt="">
+            </div>
+            <div class="Page1-buttons">
+                <button class="button button1">
+                    <span><img width="16" src="Assests/languageicon.png" alt=""></span>
+                    <span>English</span>
+                    <span><img width="10" src="Assests/droparrow.jpg" alt=""></span>
+                </button>
+                <button class="button button2">Sign in</button>
+            </div>
         </nav>
-        <main class="section1-content">
-            <div class="line1">Unlimited movies, TV shows and more</div>
-            <div class="line2">Watch anywhere. Cancel anytime.</div>
-            <div class="line3">Ready to watch? Enter your email to create or restart your membership.</div>
-            <!-- <div class="loginButton"></div> -->
-            <div class="content-buttons">
-                <input class="inputGmail" type="text" name="Email" placeholder="Email Address" autofocus>
-                <button class="getStarted">Get Started <span><img width=23 src="Images/rightwhitearrow2.jfif" alt="RightArrow"></span></button>
+        <div class="blackShaded-box"></div>
+        <div class="writtenContent">
+            <div class="line line1">Unlimited movies, TV shows and more</div>
+            <div class="line line2">Watch anywhere. Cancel anytime.</div>
+            <div class="line line3">Ready to watch? Enter your email to create or restart your membership.</div>
+        
+            <div class="emailGetStarted">
+                <input id="emailInputButton" type="text" placeholder="Email address" autofocus>
+                <button class="getStartedButton"><span>Get Started</span><span><img width="19" src="Images/rightwhitearrow2.jfif" alt=""></span></button>
             </div>
-        </main>
-    </section>
+        </section>
 
-    <section class="Page2">
-        <div class="Page2-content">
-            <div class="Page2-writtenContent1">
-                <div class="Page2-line1">Enjoy on your TV</div>
-                <div class="Page2-line2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</div>
+        <section class="Page2">
+            <div class="Page2-lines">
+                <div>Enjoy on your TV</div>
+                <div>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</div>
             </div>
-            <div class="Page2-imageVideo">
-                <img class=Page2-tvFrame width=467 src="Assests/tv.png" alt="Page1-Video">
-                <video class="Page2-video" src="Videos/animationVideo.m4v" autoplay loop muted></video>
+            <div class="Page2-videoFrame">
+                <img src="Assests/tv.png" alt="">
+                <video src="Videos/animationVideo.m4v" autoplay muted loop></video>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="Page3">
-        <div class="Page3-images">
-            <img width=233 class="Page3-mobileImage" src="Images/mobile.jpg" alt="Page3-Mobile-Image">
-            <div class="bottomBox">
-                <img class="Page3-bottomImage" width=70 src="Images/boxshotbottommobile.png" alt="Mobile_bottom_pic">
-                <div class="contentBoxBetweenImages">
-                    <div class="StrangerThings">Stranger things</div>
-                    <div class="Page3-downloading">Downloading...</div>
+        <section class="Page3">
+            <div class="Page3-mobileImage">
+                <img src="Images/mobile.jpg" alt="">
+                <div class="bottomBox">
+                    <!-- <div> -->
+                        <img src="Images/boxshotbottommobile.png" alt="">
+                        <div class="contentBottomBox">
+                            <div>Stranger Things</div>
+                            <div>Downloading...</div>
+                        </div>
+                    <!-- </div> -->
+                    <img src="Images/downloadAnimation.gif"></img>
                 </div>
-                <img class="Page3-downloadAnimation" width=38 height=39 src="Images/downloadAnimation.gif" alt="downloadAnimation">
             </div>
-        </div>
-        <div class="Page3-writtenContent">
-            <div class="Page3-line1">Download your shows to watch offline</div>
-            <div class="Page3-line2">Save your favourites easily and always have something to watch.</div>
-        </div>
-    </section>
-
-    <section class="Page4">
-            <div class="Page4-writtenContent1">
-                <div class="Page4-line1">Watch everywhere</div>
-                <div class="Page4-line2">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</div>
+            <div class="Page3-lines">
+                <div>Download your shows to watch offline</div>
+                <div>Save your favourites easily and always have something to watch.</div>
             </div>
-            <div class="Page4-imageVideo">
-                <img class=Page4-tvFrame width=467 src="Assests/rajmachawal.png" alt="Page4-Video">
-                <video class="Page4-video" src="Videos/rajmachawalvideo.m4v" autoplay loop muted></video>
+        </section>
+
+        <section class="Page4">
+            <div class="Page4-lines">
+                <div>Watch everywhere</div>
+                <div>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</div>
             </div>
-    </section>
+            <div class="Page4-videoFrame">
+                <img src="Assests/rajmachawal.png" alt="">
+                <video src="Videos/rajmachawalvideo.m4v" autoplay muted loop></video>
+            </div>
+        </section>
 
-    <section class="Page5">
-        <div>
-            <img class="Page5-image" width=70 src="Images/childrenPoster.png" alt="Mobile_bottom_pic">
-        </div>
-        <div class="Page5-writtenContent">
-            <div class="Page5-line1">Create profiles for kids</div>
-            <div class="Page5-line2">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</div>
-        </div>
-    </section>
+        <section class="Page5">
+            <div class="Page5-Image">
+                <img src="Images/childrenPoster.png" alt="">
+            </div>
+            <div class="Page5-lines">
+                <div>Watch everywhere</div>
+                <div>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</div>
+            </div>
+        </section>
 
-    <section class="Page6">
-        <h1 class="heading">Frequently Asked Questions</h1>
-        <main class="Questions">
-            <div class="question">What is Netflix? <img width=50 src="Images/plusSign.png" alt=""></div>
-            <div class="question">How much does Netflix cost? <img width=50 src="Images/plusSign.png" alt=""></div>
-            <div class="question">Where can I watch? <img width=50 src="Images/plusSign.png" alt=""></div>
-            <div class="question">How do I cancel? <img width=50 src="Images/plusSign.png" alt=""></div>
-            <div class="question">What can I watch on Netflix? <img width=50 src="Images/plusSign.png" alt=""></div>
-            <div class="question">Is Netflix good for kids? <img width=50 src="Images/plusSign.png" alt=""></div>
-        </main>
-        <div class="membershipLine">Ready to watch? Enter your email to create or restart your membership.</div>
-        <div class="content-buttons">
-            <input class="inputGmail" type="text" name="Email" placeholder="Email Address" autofocus>
-            <button class="getStarted">Get Started <span><img width=23 src="Images/rightwhitearrow2.jfif" alt="RightArrow"></span></button>
-        </div>
-    </section>
+        <section class="Page6">
+            <div class="heading">Frequently Asked Questions</div>
+            <div class="questions ">What is Netflix?
+                <span class="plusSign"><img src="Images/plusSign.png" alt=""></span>
+            </div>
+            <div class="questions ">How much does Netflix cost?
+                <span class="plusSign"><img src="Images/plusSign.png" alt=""></span>
+            </div>
+            <div class="questions ">Where can i watch?<span class="plusSign"><img src="Images/plusSign.png" alt=""></span></div>
+            <div class="questions ">How do I cancel?
+                <span class="plusSign"><img src="Images/plusSign.png" alt=""></span>
+            </div>
+            <div class="questions ">Where can I watch on Netflix?
+                <span class="plusSign"><img src="Images/plusSign.png" alt=""></span>
+            </div>
+            <div class="questions ">Is Netflix good for kids?
+                <span class="plusSign"><img src="Images/plusSign.png" alt=""></span>
+            </div>
+            <div class="readyToWatch">Ready to watch? Enter your email to create or restart your membership.</div>
+            <div class="emailGetStarted">
+                <input id="emailInputButton" type="text" placeholder="Email address" autofocus>
+                <button class="getStartedButton"><span>Get Started</span><span><img width="19" src="Images/rightwhitearrow2.jfif" alt=""></span></button>
+            </div>
+        </section>
 
-    <section class="Page7">
-        <div class="firstLine">
-            <span>Questions? Call</span>
-            <span class="contactNumber">000-800-100-8343</span>
-        </div>
-        <div class="grid">
-            <div class="options">FAQ</div>
-            <div class="options">Help Centre</div>
-            <div class="options">Account</div>
-            <div class="options">Media Centre</div>
-            <div class="options">Investor Relations</div>
-            <div class="options">Jobs</div>
-            <div class="options">Ways to Watch</div>
-            <div class="options">Terms of Use</div>
-            <div class="options">Privacy</div>
-            <div class="options">Cookie Preferences</div>
-            <div class="options">Corporate Information</div>
-            <div class="options">Contact Us</div>
-            <div class="options">Speed Test</div>
-            <div class="options">Legal Notices</div>
-            <div class="options">Only on Netflix</div>
-        </div>
-        <div class="button">
-            <img width="17" src="Assests/languageicon.png" alt="">
-            <span class="english">English</span>
-            <img width=10 src="Assests/droparrow.jpg" alt="">
-        </div>
-        <div class="lastLine">Netflix India</div>
-    </section>
+        <section class="Page7">
+            <div class="Page7-contentBox">
+                <div class="Questions">
+                    <span>Questions? Call</span>
+                    <span class="number">000-800-919-1694</span>
+                </div>
+                <div class="helpingLinks">
+                    <div class="links">FAQ</div>
+                    <div class="links">Help Centre</div>
+                    <div class="links">Account</div>
+                    <div class="links">Media Centre</div>
+                    <div class="links">Investor Relations</div>
+                    <div class="links">Jobs</div>
+                    <div class="links">Ways to Watch</div>
+                    <div class="links">Terms of Use</div>
+                    <div class="links">Privacy</div>
+                    <div class="links">Cookie Preferences</div>
+                    <div class="links">Corporate Information</div>
+                    <div class="links">Contact Us</div>
+                    <div class="links">Speed Test</div>
+                    <div class="links">Legal Notices</div>
+                    <div class="links">Only on Netflix</div>
+                </div>
+                <button class="button button1 Page7-languageButton">
+                    <span><img width="16" src="Assests/languageicon.png" alt=""></span>
+                    <span>English</span>
+                    <span><img width="10" src="Assests/droparrow.jpg" alt=""></span>
+                </button>
+                <div class="netflixIndia">Netflix India</div>
+            </div>
+        </section>
+       
+    </div>
 </body>
 </html>
